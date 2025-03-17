@@ -6,7 +6,7 @@ services:
       dockerfile: Dockerfile
     container_name: nginx_proxy_sub
     env_file:
-      - .env
+      - stack.env
     ports:
       - ${SITE_PORT}:${SITE_PORT}
     volumes:
